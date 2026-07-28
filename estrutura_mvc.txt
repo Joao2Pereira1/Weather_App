@@ -1,0 +1,33 @@
+# File Tree: WeatherApp
+
+app/
+│
+├── model/
+│   ├── weather_data.py       # WeatherData e LocationData, classes que vao guardar os dados de forma organizada
+│
+├── services/
+│   ├── weather_service.py    # Chama API e retorna objetos do model WeatherData e LocationData
+│
+├── controller/
+│   ├── main_window.py        # Liga UI aos serviços, gere eventos da UI e depois busca os dados de weather_service e icons_manager e mostra na UI
+│
+├── ui/
+│   ├── gui.py
+│   ├── gui.ui
+├── utils/
+│   └── icons_manager.py  # responsavel por guardar os icones localmente, etc
+── docs/
+│   └── api usada.txt
+│   └── explicacao api.txt
+│   └── nota icones.txt
+│   └── styles.txt
+│   └── Warning.txt
+── icons/
+│   └── sunny.png  ...
+│
+── tests/
+│   └── testing_api.py
+│   └── test_icons_manager.py
+│   └── test_weather_service.py
+│
+│── requirements.txt

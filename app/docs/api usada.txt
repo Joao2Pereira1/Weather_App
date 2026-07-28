@@ -1,0 +1,89 @@
+Para aprender a fazer as requests à API de forma amigável usa: https://www.weatherapi.com/api-explorer.aspx
+
+Exemplo:
+
+Request
+https://api.weatherapi.com/v1/current.json?key={api_key}&q=London&aqi=no
+
+Response Code
+200
+
+Response Headers
+{
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "Vary": "Accept-Encoding",
+  "CDN-PullZone": "93447",
+  "CDN-Uid": "8fa3a04a-75d9-4707-8056-b7b33c8ac7fe",
+  "CDN-RequestCountryCode": "GB",
+  "Age": "0",
+  "x-weatherapi-qpm-left": "5000000",
+  "x-varnish": "61826519",
+  "CDN-ProxyVer": "1.33",
+  "CDN-RequestPullSuccess": "True",
+  "CDN-RequestPullCode": "200",
+  "CDN-CachedAt": "08/05/2025 12:42:42",
+  "CDN-EdgeStorageId": "1048",
+  "CDN-RequestId": "91b61601744e2c68eae9b66c5185ab1c",
+  "CDN-Cache": "MISS",
+  "CDN-Status": "200",
+  "CDN-RequestTime": "0",
+  "Cache-Control": "public, max-age=180",
+  "Content-Type": "application/json",
+  "Date": "Tue, 05 Aug 2025 12:42:42 GMT",
+  "Server": "BunnyCDN-DE1-756",
+  "Via": "1.1 varnish (Varnish/7.1)"
+}
+
+Response Body
+{
+    "location": {
+        "name": "London",
+        "region": "City of London, Greater London",
+        "country": "United Kingdom",
+        "lat": 51.5171,
+        "lon": -0.1062,
+        "tz_id": "Europe/London",
+        "localtime_epoch": 1754397530,
+        "localtime": "2025-08-05 13:38"
+    },
+    "current": {
+        "last_updated_epoch": 1754397000,
+        "last_updated": "2025-08-05 13:30",
+        "temp_c": 21.1,
+        "temp_f": 70.0,
+        "is_day": 1,
+        "condition": {
+            "text": "Partly Cloudy",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+            "code": 1003
+        },
+        "wind_mph": 13.0,
+        "wind_kph": 20.9,
+        "wind_degree": 283,
+        "wind_dir": "WNW",
+        "pressure_mb": 1022.0,
+        "pressure_in": 30.18,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 40,
+        "cloud": 0,
+        "feelslike_c": 21.1,
+        "feelslike_f": 70.0,
+        "windchill_c": 21.4,
+        "windchill_f": 70.5,
+        "heatindex_c": 23.5,
+        "heatindex_f": 74.2,
+        "dewpoint_c": 4.9,
+        "dewpoint_f": 40.9,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 3.6,
+        "gust_mph": 14.9,
+        "gust_kph": 24.0,
+        "short_rad": 578.45,
+        "diff_rad": 90.08,
+        "dni": 612.51,
+        "gti": 140.87
+    }
+}

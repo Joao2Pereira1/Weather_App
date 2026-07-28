@@ -1,0 +1,4 @@
+Sunny,C:\Code\Python\Learning-Projects\WeatherApp\app\icons\sunny.png
+Partly Cloudy,C:\Code\Python\Learning-Projects\WeatherApp\app\icons\partly_cloudy.png
+Light rain shower,C:\Code\Python\Learning-Projects\WeatherApp\app\icons\light_rain_shower.png
+Patchy rain nearby,C:\Code\Python\Learning-Projects\WeatherApp\app\icons\patchy_rain_nearby.png

@@ -1,0 +1,1 @@
+desta vez inseri os estilos no proprio ficheiro gui.py, em vez de inserir num ficheiro styles.qss e depois carregar esse ficheiro.

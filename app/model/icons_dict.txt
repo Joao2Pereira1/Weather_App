@@ -1,0 +1,3 @@
+Sunny,app/icons/sunny.png
+Patchy rain nearby,app/icons/patchy_rain_nearby.png
+Partly Cloudy,app/icons/partly_cloudy.png

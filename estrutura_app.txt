@@ -1,0 +1,36 @@
+# WeatherApp QT Layout
+
+MainWindow
+│
+├── menubar
+│   ├── weatherMenu
+│   │   ├── actionRefresh
+│   │   ├── actionCurrentLocation
+│   │   └── actionExit
+│   │
+│   └── helpMenu
+│       ├── actionHelp
+│       └── actionAbout
+│
+├── statusbar
+│   └── statusLabel (QLabel)
+│       "Pronto"
+|
+└── centralwidget
+    │
+    └── mainLayout
+        │
+        ├── searchLayout
+        │   ├── locationLabel
+        │   ├── locationInput
+        │   └── searchButton
+        │
+        ├── locationInfoLabel
+        │
+        ├── forecastTitle
+        │
+        └── weekLayout
+            ├── card_1
+            ├── card_2
+            ├── ...
+            └── card_7

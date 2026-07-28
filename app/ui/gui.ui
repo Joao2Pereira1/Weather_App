@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>874</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowforecastTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: #E0F7FA;  /* azul clarinho */
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="locationLabel">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Segoe UI, Arial;
+font-size: 22px;
+color: #333;</string>
+        </property>
+        <property name="text">
+         <string>Local:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="locationInput">
+        <property name="styleSheet">
+         <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ConfirmButton">
+        <property name="styleSheet">
+         <string notr="true">background-color: #000000;
+border: 1px solid #AAAAAA;
+border-radius: 4px;
+color: #FFFFFF;
+padding: 4px;</string>
+        </property>
+        <property name="text">
+         <string>Confirmar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="LocalDetails">
+      <property name="styleSheet">
+       <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>6</horstretch>
+        <verstretch>6</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>850</width>
+        <height>290</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>2000</width>
+        <height>1200</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="forecastTitle">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="0">
+        <layout class="QHBoxLayout" name="IconsLayout">
+         <item>
+          <widget class="QLabel" name="icon1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imagem1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imagem2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imagem3</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imagem4</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imagem5</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imagem6</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imagem7</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0">
+        <layout class="QHBoxLayout" name="TemperaturesLayout">
+         <item>
+          <widget class="QLabel" name="temperature1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri Light</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>32ºC 40ºC</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="temperature2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri Light</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>22ºC 30ºC</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="temperature4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri Light</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>18ºC 30ºC</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="temperature4_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri Light</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>10ºC 20ºC</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="temperature5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri Light</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>30ºC 40ºC</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="temperature6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri Light</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>12ºC 22ºC</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="temperature7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri Light</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>30ºC 40ºC</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="forecastTitle">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Previsão do tempo para esta semana:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="DaysLayout">
+         <item>
+          <widget class="QLabel" name="day1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+           </property>
+           <property name="text">
+            <string>Segunda</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="day2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+           </property>
+           <property name="text">
+            <string>Terça</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="day3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+           </property>
+           <property name="text">
+            <string>Quarta</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="day4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+           </property>
+           <property name="text">
+            <string>Quinta</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="day5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+           </property>
+           <property name="text">
+            <string>Sexta</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="day6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+           </property>
+           <property name="text">
+            <string>Sábado</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="day7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 4px;</string>
+           </property>
+           <property name="text">
+            <string>Domingo</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>874</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="weatherMenu">
+    <property name="forecastTitle">
+     <string>Clima</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="helpMenu">
+    <property name="forecastTitle">
+     <string>Acerca de</string>
+    </property>
+   </widget>
+   <addaction name="weatherMenu"/>
+   <addaction name="helpMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

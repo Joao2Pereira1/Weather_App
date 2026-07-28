@@ -1,0 +1,34 @@
+Aqui podes ver os métodos e parametros das requests da api: https://www.weatherapi.com/docs
+
+Os principais métodos são:
+
+API	                    API Method
+Current weather	        /current.json or /current.xml
+Forecast	            /forecast.json or /forecast.xml
+Search or Autocomplete	/search.json or /search.xml
+History	                /history.json or /history.xml
+Alerts	                /alerts.json or /alerts.xml
+
+Os principais parametros da request são:
+
+Parameter		Description
+key	Required	API Key
+q	Required	Query parameter based on which data is sent back. It could be following:
+
+-> Esses são parametros obrigatórios, em que key é a api key e q é a query, ou seja
+o tipo de consulta que estás a fazer a api saber que conteúdo devolver.
+
+Depois tens outros opcionais e tens um que é útil porque serve para obteres a previsao
+do tempo em x dias, que vão 1 a 14. Entao tens de passar days=5
+
+https://api.weatherapi.com/v1/forecast.json?key=api_key&q=Lisboa&days=7&aqi=no&alerts=no
+
+key: api key; q: local que é Lisboa; aqi: é air quality; days: numero de dias na previsao; alerts: não é preciso
+
+Nota: podes fazer o tempo só para portugal, ou seja crias uma lista com as localidades de portugal, podem até ser
+as principais e depois a pessoa escolhe por exemplo aveiro e tu escreves assim local = aveiro, e depois mudas na
+request f"...q={local}&days=7", e tambem podes deixar escolher o numero de dias
+
+-> o problema do forecast é que a resposta é muito grande devido a ser o tempo a cada hora durante esses 7 dias,
+se quiseres podes por so o resumo do dia tipo a temperatura maxima, minima, media e o estado do tempo no geral,
+eu vou fazer isso para perder menos tempo.
